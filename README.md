@@ -18,11 +18,11 @@
 ---
 
 ## 1. Team Information & Overview
-* **Team Name - Vector X**
-* **Country - India**
-* **Members - Pratham Periwal, Inaaya Sood, Swasti Kedia**
-* **Coach - Chirag Sir** 
-* **Category - WRO Future Engineers 2026 (Self-Driving Cars Challenge)**
+* **Team Name:** Vector X
+* **Country:** India
+* **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
+* **Coach:** Chirag Sir
+* **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
 
 ### Project Overview
 ---
@@ -46,6 +46,7 @@
 ---
 
 ## 3. Repository Structure
+
 ```text
 ├── cad/                  # CAD design files (.STL, .STEP, etc.)
 ├── schematics/           # Wiring diagrams and electrical schematics
@@ -53,13 +54,21 @@
 ├── photos/               # Vehicle hardware photographs and team photo
 ├── docs/                 # Performance testing logs, metrics, and additional journal entries
 └── README.md             # Main engineering documentation
+```
+
+---
 
 ## 4. Mobility & Mechanical Design
 
 ### Chassis Design & Kinematics
 ### Steering & Drive Mechanism
 ### Torque & Speed Calculations
-* **Vehicle Weight:** * **Target Maximum Velocity:** * **Gear Ratio:** * **Torque Reasoning:** ---
+* **Vehicle Weight:**
+* **Target Maximum Velocity:**
+* **Gear Ratio:**
+* **Torque Reasoning:**
+
+---
 
 ## 5. Power & Sensor Architecture
 
@@ -96,7 +105,7 @@
 | | | | | | |
 | | | | | | |
 | | | | | | |
-| **Total Build Cost** | | | | | |
+| **Total Build Cost** | | | | | **$0.00** |
 
 ---
 
