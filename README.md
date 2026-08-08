@@ -1,10 +1,16 @@
 # VectorX
 ## WRO Future Engineers 2026
 
+<div align="center">
+
 <img width="501" height="570" alt="VectorX Logo" src="https://github.com/user-attachments/assets/b47728f1-0384-4bb1-a760-15034163b67b" />
+
+<br />
 
 [![Website](https://img.shields.io/badge/Website-Vector%20X-green?style=for-the-badge&logo=googlechrome&logoColor=white)](https://your-website-url.com)
 [![YouTube](https://img.shields.io/badge/YouTube-Vector%20X-red?style=for-the-badge&logo=youtube&logoColor=white)](https://your-youtube-channel-url.com)
+
+</div>
 
 ## Table of Contents
 1. [The Project](#1-the-project)
