@@ -115,7 +115,3 @@
 ### Step 2: Electrical Wiring & Component Mounting
 ### Step 3: Software Setup & Environment Configuration
 ### Step 4: Calibration & Execution Procedure
----
-
-## 10. License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
