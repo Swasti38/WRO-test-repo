@@ -4,7 +4,7 @@
 <img width="501" height="570" alt="VectorX Logo" src="https://github.com/user-attachments/assets/00d85e88-438f-449e-a779-0e657bc5050e" />
 
 [![Website](https://img.shields.io/badge/Website-Vector%20X-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://your-website-url.com)
-[![YouTube](https://img.shields.io/badge/YouTube-Vector%20X%20Channel-red?style=for-the-badge&logo=youtube&logoColor=white)](https://your-youtube-channel-url.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Vector%20X-red?style=for-the-badge&logo=youtube&logoColor=white)](https://your-youtube-channel-url.com)
 
 ## Table of Contents
 1. [Team Information & Overview](#1-team-information--overview)
