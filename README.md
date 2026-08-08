@@ -9,17 +9,17 @@
 ## Table of Contents
 1. [The Project](#1-the-project)
 2. [The Team](#2-the-team)
-3. [System Architecture](#3-system-architecture)
-4. [Mechanical & Mobility System](#4-mechanical--mobility-system)
-5. [Power & Sensor Architecture](#5-power--sensor-architecture)
-6. [Software Architecture](#6-software-architecture)
-7. [Autonomous Navigation & Obstacle Strategy](#7-autonomous-navigation--obstacle-strategy)
-8. [Engineering Decisions & Trade-offs](#8-engineering-decisions--trade-offs)
-9. [Testing, Calibration & Iteration](#9-testing-calibration--iteration)
-10. [Reproducing VectorX](#10-reproducing-vectorx)
-11. [Repository Guide](#11-repository-guide)
-12. [Videos & Media](#12-videos--media)
-13. [The Vehicle](#13-the-vehicle)
+3. [The Vehicle](#3-the-vehicle)
+4. [System Architecture](#4-system-architecture)
+5. [Mechanical & Mobility System](#5-mechanical--mobility-system)
+6. [Power & Sensor Architecture](#6-power--sensor-architecture)
+7. [Software Architecture](#7-software-architecture)
+8. [Autonomous Navigation & Obstacle Strategy](#8-autonomous-navigation--obstacle-strategy)
+9. [Engineering Decisions & Trade-offs](#9-engineering-decisions--trade-offs)
+10. [Testing, Calibration & Iteration](#10-testing-calibration--iteration)
+11. [Reproducing VectorX](#11-reproducing-vectorx)
+12. [Repository Guide](#12-repository-guide)
+13. [Videos & Media](#13-videos--media)
 14. [Engineering Journal](#14-engineering-journal)
 
 ---
@@ -27,22 +27,41 @@
 ## 1. The Project
 ---
 
-## 2. Team
+## 2. The Team
+
+![Team Photo](photos/team_photo.jpg)
+
 * **Team Name:** Vector X
 * **Country:** India
 * **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
 * **Coach:** Chirag Sir
-* **Category:** WRO Future Engineers 2026
+* **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
 
-![Team Photo](photos/team_photo.jpg)
+### Member Roles & Contributions
+* **Pratham Periwal:** Software & Computer Vision Engineer
+* **Inaaya Sood:** Mechanical Systems & CAD Designer
+* **Swasti Kedia:** Electronics & Sensor Integration Engineer
 
 ---
 
-## 3. System Architecture
+## 3. The Vehicle
+
+### Multi-View Photographs
+| Front View | Back View | Top View | Bottom View |
+| :---: | :---: | :---: | :---: |
+| ![Front](photos/car_front.jpg) | ![Back](photos/car_back.jpg) | ![Top](photos/car_top.jpg) | ![Bottom](photos/car_bottom.jpg) |
+
+### Side Photographs
+| Left Side | Right Side |
+| :---: | :---: |
+| ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
 
 ---
 
-## 4. Mechanical & Mobility System
+## 4. System Architecture
+---
+
+## 5. Mechanical & Mobility System
 
 ### Chassis & Kinematics
 ### Steering & Drive Mechanism
@@ -54,7 +73,7 @@
 
 ---
 
-## 5. Power & Sensor Architecture
+## 6. Power & Sensor Architecture
 
 ### Power Isolation & Distribution
 | Component Domain | Powered Hardware | Power Source / Voltage | Max Current Draw |
@@ -68,26 +87,26 @@
 
 ---
 
-## 6. Software Architecture
+## 7. Software Architecture
 
 ### Control Flow & State Machine
 ### Software Stack
 ---
 
-## 7. Autonomous Navigation & Obstacle Strategy
+## 8. Autonomous Navigation & Obstacle Strategy
 
 ### Computer Vision Pipeline
 ### Steering Control & Steering PID
 ### Parallel Parking Strategy
 ---
 
-## 8. Engineering Decisions & Trade-offs
+## 9. Engineering Decisions & Trade-offs
 ---
 
-## 9. Testing, Calibration & Iteration
+## 10. Testing, Calibration & Iteration
 ---
 
-## 10. Reproducing VectorX
+## 11. Reproducing VectorX
 
 ### Bill of Materials (BOM)
 | Component | Description | Qty | Unit Cost ($) | Total ($) | Source / Vendor |
@@ -98,7 +117,7 @@
 ### Step-by-Step Assembly Instructions
 ---
 
-## 11. Repository Guide
+## 12. Repository Guide
 
 ```text
 ├── cad/                  # 3D model files (.STL, .STEP)
@@ -111,23 +130,11 @@
 
 ---
 
-## 12. Videos & Media
+## 13. Videos & Media
 * **Open Challenge Demonstration Video:** [YouTube Link]
 * **Obstacle Challenge Demonstration Video:** [YouTube Link]
 
 ---
-
-## 13. The Vehicle
-
-### Multi-View Photographs
-| Front View | Back View | Top View | Bottom View |
-| :---: | :---: | :---: | :---: |
-| ![Front](photos/car_front.jpg) | ![Back](photos/car_back.jpg) | ![Top](photos/car_top.jpg) | ![Bottom](photos/car_bottom.jpg) |
-
-### Side Photographs
-| Left Side | Right Side |
-| :---: | :---: |
-| ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
 
 ## 14. Engineering Journal
 ---
