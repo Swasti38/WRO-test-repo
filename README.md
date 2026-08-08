@@ -12,7 +12,7 @@
 
 </div>
 
-## Table of Contents
+## 🧭 So, what can you find here?
 1. [The Project](#1-the-project)
    - [Overview](#11-overview)
    - [The Challenge](#12-the-challenge)
