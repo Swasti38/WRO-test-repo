@@ -38,9 +38,9 @@
 * **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
 
 ### Member Roles & Contributions
-* **Pratham Periwal:** Software & Computer Vision Engineer
-* **Inaaya Sood:** Mechanical Systems & CAD Designer
-* **Swasti Kedia:** Electronics & Sensor Integration Engineer
+* **Pratham Periwal:** xyz
+* **Inaaya Sood:** xyz
+* **Swasti Kedia:** xyz
 
 ---
 
