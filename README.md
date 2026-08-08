@@ -1,4 +1,4 @@
-# Vector X
+# VECTORX
 ## WRO Future Engineers 2026
 
 <img width="501" height="570" alt="VectorX Logo" src="https://github.com/user-attachments/assets/00d85e88-438f-449e-a779-0e657bc5050e" />
@@ -7,66 +7,50 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Vector%20X-red?style=for-the-badge&logo=youtube&logoColor=white)](https://your-youtube-channel-url.com)
 
 ## Table of Contents
-1. [Team Information & Overview](#1-team-information--overview)
-2. [Vehicle Photos & Demonstration Videos](#2-vehicle-photos--demonstration-videos)
-3. [Repository Structure](#3-repository-structure)
-4. [Mobility & Mechanical Design](#4-mobility--mechanical-design)
+1. [The Project](#1-the-project)
+2. [The Vehicle](#2-the-vehicle)
+3. [System Architecture](#3-system-architecture)
+4. [Mechanical & Mobility System](#4-mechanical--mobility-system)
 5. [Power & Sensor Architecture](#5-power--sensor-architecture)
-6. [Software Architecture & Control Strategy](#6-software-architecture--control-strategy)
-7. [Systems Thinking & Engineering Decisions](#7-systems-thinking--engineering-decisions)
-8. [Bill of Materials (BOM)](#8-bill-of-materials-bom)
-9. [Step-by-Step Build & Assembly Instructions](#9-step-by-step-build--assembly-instructions)
+6. [Software Architecture](#6-software-architecture)
+7. [Autonomous Navigation & Obstacle Strategy](#7-autonomous-navigation--obstacle-strategy)
+8. [Engineering Decisions & Trade-offs](#8-engineering-decisions--trade-offs)
+9. [Testing, Calibration & Iteration](#9-testing-calibration--iteration)
+10. [Reproducing VectorX](#10-reproducing-vectorx)
+11. [Repository Guide](#11-repository-guide)
+12. [Videos & Media](#12-videos--media)
+13. [Team](#13-team)
+14. [Engineering Journal](#14-engineering-journal)
 
 ---
 
-## 1. Team Information & Overview
-* **Team Name:** Vector X
-* **Country:** India
-* **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
-* **Coach:** Chirag Sir
-* **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
-
-### Project Overview
+## 1. The Project
 ---
 
-## 2. Vehicle Photos & Demonstration Videos
+## 2. The Vehicle
 
-### Vehicle Views
+### Multi-View Photographs
 | Front View | Back View | Top View | Bottom View |
 | :---: | :---: | :---: | :---: |
 | ![Front](photos/car_front.jpg) | ![Back](photos/car_back.jpg) | ![Top](photos/car_top.jpg) | ![Bottom](photos/car_bottom.jpg) |
 
-### Side Views
+### Side Photographs
 | Left Side | Right Side |
 | :---: | :---: |
 | ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
 
-### Demonstration Videos
-* **Open Challenge Video:** [YouTube Link]
-* **Obstacle Challenge Video:** [YouTube Link]
-
 ---
 
-## 3. Repository Structure
-
-```text
-├── cad/                  # CAD design files (.STL, .STEP, etc.)
-├── schematics/           # Wiring diagrams and electrical schematics
-├── src/                  # Source code for autonomous control, vision, and drivers
-├── photos/               # Vehicle hardware photographs and team photo
-├── docs/                 # Performance testing logs, metrics, and additional journal entries
-└── README.md             # Main engineering documentation
-```
-
+## 3. System Architecture
 ---
 
-## 4. Mobility & Mechanical Design
+## 4. Mechanical & Mobility System
 
-### Chassis Design & Kinematics
+### Chassis & Kinematics
 ### Steering & Drive Mechanism
 ### Torque & Speed Calculations
-* **Vehicle Weight:**
-* **Target Maximum Velocity:**
+* **Vehicle Mass:**
+* **Target Speed:**
 * **Gear Ratio:**
 * **Torque Reasoning:**
 
@@ -74,46 +58,80 @@
 
 ## 5. Power & Sensor Architecture
 
-### Power System Architecture & Power Budget
+### Power Isolation & Distribution
 | Component Domain | Powered Hardware | Power Source / Voltage | Max Current Draw |
 | :--- | :--- | :--- | :--- |
 | **Logic Domain** | | | |
 | **Drive Domain** | | | |
 
-### Sensor Suite & Selection Rationale
+### Sensor Suite
 ### Wiring Diagram
 ![Wiring Diagram](schematics/wiring_diagram.png)
 
 ---
 
-## 6. Software Architecture & Control Strategy
+## 6. Software Architecture
 
-### High-Level State Machine
-### Computer Vision & Path Planning
-### Control Loops & Steering Algorithm
+### Control Flow & State Machine
+### Software Stack
+---
+
+## 7. Autonomous Navigation & Obstacle Strategy
+
+### Computer Vision Pipeline
+### Steering Control & Steering PID
 ### Parallel Parking Strategy
 ---
 
-## 7. Systems Thinking & Engineering Decisions
-
-### Subsystem Trade-offs & Iterations
-### Risk Management & Failure Mitigation
+## 8. Engineering Decisions & Trade-offs
 ---
 
-## 8. Bill of Materials (BOM)
+## 9. Testing, Calibration & Iteration
+---
 
-| Component Name | Description / Specification | Qty | Unit Cost (₹) | Total Cost (₹) | Source Link / Vendor |
+## 10. Reproducing VectorX
+
+### Bill of Materials (BOM)
+| Component | Description | Qty | Unit Cost ($) | Total ($) | Source / Vendor |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | | | | | | |
-| | | | | | |
-| | | | | | |
-| **Total Build Cost** | | | | **₹0** | |
+| **Total Cost** | | | | **$0.00** | |
+
+### Step-by-Step Assembly Instructions
+---
+
+## 11. Repository Guide
+
+```text
+├── cad/                  # 3D model files (.STL, .STEP)
+├── schematics/           # Wiring diagrams and PCB schematics
+├── src/                  # Main source code (Vision, Control, Drivers)
+├── photos/               # Vehicle views and team photos
+├── docs/                 # Journal entries, testing logs, and telemetry
+└── README.md             # Main engineering documentation
+```
 
 ---
 
-## 9. Step-by-Step Build & Assembly Instructions
+## 12. Videos & Media
+* **Open Challenge Demonstration Video:** [YouTube Link]
+* **Obstacle Challenge Demonstration Video:** [YouTube Link]
 
-### Step 1: Mechanical Chassis & Frame Assembly
-### Step 2: Electrical Wiring & Component Mounting
-### Step 3: Software Setup & Environment Configuration
-### Step 4: Calibration & Execution Procedure
+---
+
+## 13. Team
+* **Team Name:** Vector X
+* **Country:** India
+* **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
+* **Coach:** Chirag Sir
+* **Category:** WRO Future Engineers 2026
+
+![Team Photo](photos/team_photo.jpg)
+
+---
+
+## 14. Engineering Journal
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
