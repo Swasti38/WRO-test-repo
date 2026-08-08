@@ -18,7 +18,11 @@
 ---
 
 ## 1. Team Information & Overview
-* **Team Name:** * **Country/Region:** * **Members:** * **Coach:** * **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
+**Team Name - Vector X**
+**Country - India**
+**Members - Pratham Periwal, Inaaya Sood, Swasti Kedia**
+**Coach - Chirag Sir** 
+**Category - WRO Future Engineers 2026 (Self-Driving Cars Challenge)**
 
 ### Project Overview
 ---
