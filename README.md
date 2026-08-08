@@ -100,12 +100,12 @@
 
 ## 8. Bill of Materials (BOM)
 
-| Component Name | Description / Specification | Qty | Unit Cost ($) | Total Cost ($) | Source Link / Vendor |
+| Component Name | Description / Specification | Qty | Unit Cost (₹) | Total Cost (₹) | Source Link / Vendor |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | | | | | | |
 | | | | | | |
 | | | | | | |
-| **Total Build Cost** | | | | | **$0.00** |
+| **Total Build Cost** | | | | | **₹0** |
 
 ---
 
