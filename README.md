@@ -8,7 +8,7 @@
 
 ## Table of Contents
 1. [The Project](#1-the-project)
-2. [The Vehicle](#2-the-vehicle)
+2. [The Team](#2-the-team)
 3. [System Architecture](#3-system-architecture)
 4. [Mechanical & Mobility System](#4-mechanical--mobility-system)
 5. [Power & Sensor Architecture](#5-power--sensor-architecture)
@@ -19,7 +19,7 @@
 10. [Reproducing VectorX](#10-reproducing-vectorx)
 11. [Repository Guide](#11-repository-guide)
 12. [Videos & Media](#12-videos--media)
-13. [Team](#13-team)
+13. [The Vehicle](#13-the-vehicle)
 14. [Engineering Journal](#14-engineering-journal)
 
 ---
@@ -27,21 +27,19 @@
 ## 1. The Project
 ---
 
-## 2. The Vehicle
+## 2. Team
+* **Team Name:** Vector X
+* **Country:** India
+* **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
+* **Coach:** Chirag Sir
+* **Category:** WRO Future Engineers 2026
 
-### Multi-View Photographs
-| Front View | Back View | Top View | Bottom View |
-| :---: | :---: | :---: | :---: |
-| ![Front](photos/car_front.jpg) | ![Back](photos/car_back.jpg) | ![Top](photos/car_top.jpg) | ![Bottom](photos/car_bottom.jpg) |
-
-### Side Photographs
-| Left Side | Right Side |
-| :---: | :---: |
-| ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
+![Team Photo](photos/team_photo.jpg)
 
 ---
 
 ## 3. System Architecture
+
 ---
 
 ## 4. Mechanical & Mobility System
@@ -119,16 +117,17 @@
 
 ---
 
-## 13. Team
-* **Team Name:** Vector X
-* **Country:** India
-* **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
-* **Coach:** Chirag Sir
-* **Category:** WRO Future Engineers 2026
+## 13. The Vehicle
 
-![Team Photo](photos/team_photo.jpg)
+### Multi-View Photographs
+| Front View | Back View | Top View | Bottom View |
+| :---: | :---: | :---: | :---: |
+| ![Front](photos/car_front.jpg) | ![Back](photos/car_back.jpg) | ![Top](photos/car_top.jpg) | ![Bottom](photos/car_bottom.jpg) |
 
----
+### Side Photographs
+| Left Side | Right Side |
+| :---: | :---: |
+| ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
 
 ## 14. Engineering Journal
 ---
