@@ -1,11 +1,51 @@
-# VectorX
+# Vector X
 ## WRO Future Engineers 2026
 
-<img width="501" height="570" alt="VectorX Logo" src="https://github.com/user-attachments/assets/5b4f19d7-6c34-4ac3-b680-ea389b7f9f41" />
+<img width="501" height="570" alt="VectorX Logo" src="https://github.com/user-attachments/assets/00d85e88-438f-449e-a779-0e657bc5050e" />
 
-VectorX is our autonomous vehicle developed for the WRO Future Engineers 2026 competition.
-This repository documents our engineering process, mechanical and electrical systems, software architecture, autonomous navigation, testing, and design iterations.
-[![Website](https://img.shields.io/badge/Website-Visit-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://yourwebsite.com)
-![Future Engineers](https://img.shields.io/badge/Future%20Engineers-0057B7?style=for-the-badge)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
-![Arduino Uno](https://img.shields.io/badge/Arduino%20Uno-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+## Table of Contents
+1. [Team Information & Overview](#1-team-information--overview)
+2. [Vehicle Photos & Demonstration Videos](#2-vehicle-photos--demonstration-videos)
+3. [Repository Structure](#3-repository-structure)
+4. [Mobility & Mechanical Design](#4-mobility--mechanical-design)
+5. [Power & Sensor Architecture](#5-power--sensor-architecture)
+6. [Software Architecture & Control Strategy](#6-software-architecture--control-strategy)
+7. [Systems Thinking & Engineering Decisions](#7-systems-thinking--engineering-decisions)
+8. [Bill of Materials (BOM)](#8-bill-of-materials-bom)
+9. [Step-by-Step Build & Assembly Instructions](#9-step-by-step-build--assembly-instructions)
+10. [License](#10-license)
+
+---
+
+## 1. Team Information & Overview
+* **Team Name:** * **Country/Region:** * **Members:** * **Coach:** * **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
+
+### Project Overview
+---
+
+## 2. Vehicle Photos & Demonstration Videos
+
+### Vehicle Views
+| Front View | Back View | Top View | Bottom View |
+| :---: | :---: | :---: | :---: |
+| ![Front](photos/car_front.jpg) | ![Back](photos/car_back.jpg) | ![Top](photos/car_top.jpg) | ![Bottom](photos/car_bottom.jpg) |
+
+### Side Views
+| Left Side | Right Side |
+| :---: | :---: |
+| ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
+
+### Demonstration Videos
+* **Open Challenge Video:** [YouTube Link]
+* **Obstacle Challenge Video:** [YouTube Link]
+
+---
+
+## 3. Repository Structure
+```text
+├── cad/                  # CAD design files (.STL, .STEP, etc.)
+├── schematics/           # Wiring diagrams and electrical schematics
+├── src/                  # Source code for autonomous control, vision, and drivers
+├── photos/               # Vehicle hardware photographs and team photo
+├── docs/                 # Performance testing logs, metrics, and additional journal entries
+└── README.md             # Main engineering documentation
