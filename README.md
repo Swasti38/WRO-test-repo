@@ -13,7 +13,6 @@
 7. [Systems Thinking & Engineering Decisions](#7-systems-thinking--engineering-decisions)
 8. [Bill of Materials (BOM)](#8-bill-of-materials-bom)
 9. [Step-by-Step Build & Assembly Instructions](#9-step-by-step-build--assembly-instructions)
-10. [License](#10-license)
 
 ---
 
