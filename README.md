@@ -53,3 +53,60 @@
 ├── photos/               # Vehicle hardware photographs and team photo
 ├── docs/                 # Performance testing logs, metrics, and additional journal entries
 └── README.md             # Main engineering documentation
+
+## 4. Mobility & Mechanical Design
+
+### Chassis Design & Kinematics
+### Steering & Drive Mechanism
+### Torque & Speed Calculations
+* **Vehicle Weight:** * **Target Maximum Velocity:** * **Gear Ratio:** * **Torque Reasoning:** ---
+
+## 5. Power & Sensor Architecture
+
+### Power System Architecture & Power Budget
+| Component Domain | Powered Hardware | Power Source / Voltage | Max Current Draw |
+| :--- | :--- | :--- | :--- |
+| **Logic Domain** | | | |
+| **Drive Domain** | | | |
+
+### Sensor Suite & Selection Rationale
+### Wiring Diagram
+![Wiring Diagram](schematics/wiring_diagram.png)
+
+---
+
+## 6. Software Architecture & Control Strategy
+
+### High-Level State Machine
+### Computer Vision & Path Planning
+### Control Loops & Steering Algorithm
+### Parallel Parking Strategy
+---
+
+## 7. Systems Thinking & Engineering Decisions
+
+### Subsystem Trade-offs & Iterations
+### Risk Management & Failure Mitigation
+---
+
+## 8. Bill of Materials (BOM)
+
+| Component Name | Description / Specification | Qty | Unit Cost ($) | Total Cost ($) | Source Link / Vendor |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| **Total Build Cost** | | | | | |
+
+---
+
+## 9. Step-by-Step Build & Assembly Instructions
+
+### Step 1: Mechanical Chassis & Frame Assembly
+### Step 2: Electrical Wiring & Component Mounting
+### Step 3: Software Setup & Environment Configuration
+### Step 4: Calibration & Execution Procedure
+---
+
+## 10. License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
