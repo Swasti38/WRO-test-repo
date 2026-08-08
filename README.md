@@ -19,8 +19,7 @@
 10. [Testing, Calibration & Iteration](#10-testing-calibration--iteration)
 11. [Reproducing VectorX](#11-reproducing-vectorx)
 12. [Repository Guide](#12-repository-guide)
-13. [Videos & Media](#13-videos--media)
-14. [Engineering Journal](#14-engineering-journal)
+13. [Engineering Journal](#13-engineering-journal)
 
 ---
 
@@ -55,6 +54,9 @@
 | Left Side | Right Side |
 | :---: | :---: |
 | ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
+
+* **Open Challenge Demonstration Video:** [YouTube Link]
+* **Obstacle Challenge Demonstration Video:** [YouTube Link]
 
 ---
 
@@ -109,10 +111,10 @@
 ## 11. Reproducing VectorX
 
 ### Bill of Materials (BOM)
-| Component | Description | Qty | Unit Cost ($) | Total ($) | Source / Vendor |
+| Component | Description | Qty | Unit Cost (₹) | Total (₹) | Source / Vendor |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | | | | | | |
-| **Total Cost** | | | | **$0.00** | |
+| **Total Cost** | | | | **₹0** | |
 
 ### Step-by-Step Assembly Instructions
 ---
@@ -130,13 +132,8 @@
 
 ---
 
-## 13. Videos & Media
-* **Open Challenge Demonstration Video:** [YouTube Link]
-* **Obstacle Challenge Demonstration Video:** [YouTube Link]
+## 13. Engineering Journal
 
----
-
-## 14. Engineering Journal
 ---
 
 ## License
