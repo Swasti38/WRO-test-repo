@@ -53,6 +53,44 @@ When building VectorX, we had 3 simple goals - keeping the electronics stable, m
 * **Combining Multiple Sensors -** No single sensor is perfect, and the track is always changing. Instead of relying on just one input, we combine our **wide-angle camera (Pi Camera Module 3), laser distance sensors (ToF), and gyroscope (IMU)** to double-check every movement & increase accuracy.
 
 ### 1.4 System Overview
+VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
+```text
+       +-------------------------------------------------+
+       |           Pi Camera Module 3 Wide               |
+       +-----------------------+-------------------------+
+                               |
+                               | Captures Live Track Frames (CSI)
+                               v
+       +-------------------------------------------------+
+       |                 Raspberry Pi 5                  |
+       |  - Runs OpenCV vision processing                |
+       |  - Detects red/green pillars & parking lines    |
+       |  - Decides steering direction & speed           |
+       +-----------------------+-------------------------+
+                               |
+                               | Sends Steering & Speed Commands 
+                               | (Serial / USB Cable)
+                               v
+       +-------------------------------------------------+
+       |                  Arduino Uno                    |
+       |  - Reads MPU-6050 Gyro & ToF Distance Sensors   |
+       |  - Runs PID motor control loops                 |
+       |  - Sends precise physical output signals        |
+       +--------------+-------------------+--------------+
+                      |                   |
+      PWM Speed & DIR |                   | Steering PWM
+                      v                   v
+      +-----------------------+   +----------------------+
+      | DFRobot TB6612FNG     |   | REV Smart Robot      |
+      | Motor Driver          |   | Steering Servo       |
+      +-----------+-----------+   +----------------------+
+                  |
+                  v
+      +-----------------------+
+      | N20 Drive Motor       |
+      | (w/ Encoder Feedback) |
+      +-----------------------+
+```
 ---
 
 ## 2. The Team
