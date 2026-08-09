@@ -105,7 +105,7 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 ![Team Photo](photos/team_photo.jpg)
 
 ### Team VectorX
-**Country:** India | **Category:** WRO Future Engineers 2026
+**Country:** India
 
 </div>
 
