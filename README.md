@@ -100,8 +100,17 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 
 ## 2. The Team
 
+<div align="center">
+
 ![Team Photo](photos/team_photo.jpg)
 
+### Team VectorX
+**Country:** India | **Category:** WRO Future Engineers 2026  
+**Coach:** Chirag Sir
+
+</div>
+
+---
 ### 2.1 Team Members & Coach
 * **Team Name -** Vector X
 * **Country -** India
