@@ -148,7 +148,14 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
   </tr>
 </table>
 
-* **Coach -** **Chirag Sir** - Guided our team through system architecture, strategy, and WRO FE competition rules.
+#### Chirag Sir (Coach)
+<table>
+  <tr>
+    <td>
+      Hi, I'm Swasti! I like xyz.
+    </td>
+  </tr>
+</table>
 
 ### 2.2 Member Roles & Contributions
 * **Pratham Periwal:** xyz
