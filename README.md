@@ -12,91 +12,22 @@
 
 </div>
 
+---
+
 ## So, what can you find here?
+
 1. [The Project](#1-the-project)
-   - [Overview](#11-overview)
-   - [The Challenge](#12-the-challenge)
-   - [Our Approach](#13-our-approach)
-   - [System Overview](#14-system-overview)
 2. [The Team](#2-the-team)
-   - [Team Members & Coach](#21-team-members--coach)
-   - [Team Photo](#22-team-photo)
-   - [Member Roles & Contributions](#23-member-roles--contributions)
 3. [The Vehicle](#3-the-vehicle)
-   - [Vehicle Overview](#31-vehicle-overview)
-   - [Key Specifications](#32-key-specifications)
-   - [Multi-View Photographs](#33-multi-view-photographs)
-   - [Demonstration Videos](#34-demonstration-videos)
 4. [System Architecture](#4-system-architecture)
-   - [Hardware Architecture](#41-hardware-architecture)
-   - [Software Architecture](#42-software-architecture)
-   - [System Communication](#43-system-communication)
-   - [Subsystem Integration](#44-subsystem-integration)
 5. [Mechanical & Mobility System](#5-mechanical--mobility-system)
-   - [Chassis & Kinematics](#51-chassis--kinematics)
-   - [Drive System & Differential](#52-drive-system--differential)
-   - [Steering System](#53-steering-system)
-   - [Motors & Drivetrain](#54-motors--drivetrain)
-   - [Speed & Torque Calculations](#55-speed--torque-calculations)
-   - [Mechanical Design Decisions](#56-mechanical-design-decisions)
-   - [Mechanical Iterations](#57-mechanical-iterations)
 6. [Power & Sensor Architecture](#6-power--sensor-architecture)
-   - [Power System & Isolation](#61-power-system--isolation)
-   - [Power Distribution](#62-power-distribution)
-   - [Power Budget](#63-power-budget)
-   - [Battery & Regulation](#64-battery--regulation)
-   - [Sensors](#65-sensors)
-   - [Sensor Placement Geometry](#66-sensor-placement-geometry)
-   - [Sensor Calibration](#67-sensor-calibration)
-   - [Sensor Failure Modes & Mitigation](#68-sensor-failure-modes--mitigation)
-   - [Wiring Diagram](#69-wiring-diagram)
 7. [Software Architecture](#7-software-architecture)
-   - [Software Overview](#71-software-overview)
-   - [Software Structure](#72-software-structure)
-   - [Code Modules](#73-code-modules)
-   - [Control Flow & State Machine](#74-control-flow--state-machine)
-   - [Control Architecture](#75-control-architecture)
-   - [Communication Protocols](#76-communication-protocols)
-   - [Dependencies & Software Stack](#77-dependencies--software-stack)
 8. [Autonomous Navigation & Obstacle Strategy](#8-autonomous-navigation--obstacle-strategy)
-   - [Navigation Overview](#81-navigation-overview)
-   - [Direction & Sign Detection](#82-direction--sign-detection)
-   - [Lane / Wall Following](#83-lane--wall-following)
-   - [Obstacle Detection](#84-obstacle-detection)
-   - [Obstacle Management Strategy](#85-obstacle-management-strategy)
-   - [Parallel Parking Strategy](#86-parallel-parking-strategy)
-   - [Control Algorithm](#87-control-algorithm)
-   - [Edge Cases & Safeguards](#88-edge-cases--safeguards)
 9. [Engineering Decisions & Trade-offs](#9-engineering-decisions--trade-offs)
-   - [Design Constraints](#91-design-constraints)
-   - [Key Engineering Decisions](#92-key-engineering-decisions)
-   - [Risk Management](#93-risk-management)
 10. [Testing, Calibration & Iteration](#10-testing-calibration--iteration)
-    - [Testing Methodology](#101-testing-methodology)
-    - [Component Testing](#102-component-testing)
-    - [Subsystem Testing](#103-subsystem-testing)
-    - [Full-System Testing](#104-full-system-testing)
-    - [Calibration Procedures](#105-calibration-procedures)
-    - [Test Results](#106-test-results)
-    - [Design Iterations](#107-design-iterations)
-    - [Problems & Solutions](#108-problems--solutions)
 11. [Reproducing VectorX](#11-reproducing-vectorx)
-    - [Hardware Requirements](#111-hardware-requirements)
-    - [Bill of Materials (BOM)](#112-bill-of-materials-bom)
-    - [CAD & Manufacturing Files](#113-cad--manufacturing-files)
-    - [Wiring Instructions](#114-wiring-instructions)
-    - [Software Requirements](#115-software-requirements)
-    - [Installation](#116-installation)
-    - [Building / Compiling](#117-building--compiling)
-    - [Uploading to Controllers](#118-uploading-to-controllers)
-    - [Configuration](#119-configuration)
-    - [Calibration](#1110-calibration)
-    - [Running VectorX](#1111-running-vectorx)
 12. [Repository Guide](#12-repository-guide)
-    - [Repository Structure](#121-repository-structure)
-    - [Folder Descriptions](#122-folder-descriptions)
-    - [Where to Find What](#123-where-to-find-what)
-    - [Version History](#124-version-history)
 13. [Engineering Journal](#13-engineering-journal)
 
 ---
@@ -122,19 +53,35 @@
 
 ### 2.2 Team Photo
 ### 2.3 Member Roles & Contributions
-* **Pratham Periwal:** xyz
-* **Inaaya Sood:** xyz
-* **Swasti Kedia:** xyz
+* **Pratham Periwal:** Lead Software & Computer Vision Engineer
+* **Inaaya Sood:** Mechanical Systems & CAD Designer
+* **Swasti Kedia:** Electronics & Sensor Integration Engineer
 
 ---
 
 ## 3. The Vehicle
 
 ### 3.1 Vehicle Overview
-### 3.2 Key Specifications
-* **Dimensions:** Width [X] mm × Length [Y] mm × Height [Z] mm
+### 3.2 Key Specifications & Hardware Summary
+
+#### Vehicle Dimensions & Mass
+* **Dimensions:** Width [X] mm × Length [Y] mm × Height [Z] mm (Fits within official 300mm × 200mm × 300mm limit)
 * **Total Mass:** [X] g
 * **Ground Clearance:** [X] mm
+* **Kinematics:** 4-Wheel Drive with Ackermann Front Steering & Rear Differential Gearbox
+
+#### Hardware Component Summary Table
+| Category | Component Name | Model / Specification | Interface | Function |
+| :--- | :--- | :--- | :--- | :--- |
+| **Main Processor (SBC)** | Raspberry Pi 4 Model B | 4GB RAM / 64-bit OS | CSI / USB / UART | Runs high-level state machine, OpenCV vision, and path logic |
+| **Microcontroller (MCU)** | Arduino Nano | ATmega328P (5V) | UART / PWM / I2C | Handles low-level motor PWM, sensor reading, and IMU loop |
+| **Vision Camera** | Raspberry Pi Camera Module 3 Wide | Sony IMX708 (12MP, 120° FOV) | CSI | Captures track frames for HSV color filtering & obstacle detection |
+| **Distance Sensors** | TOF200C | VL53L0X Laser ToF Sensor | I2C | Measures exact wall distances for centering & parking alignment |
+| **Inertial Sensor (IMU)** | MPU-6050 | 6-Axis Gyroscope + Accelerometer | I2C | Tracks yaw rate and heading orientation for straight-line stability |
+| **Drive Motor Driver** | Cytron 13A Driver | 5V–30V, 13A Continuous | PWM / DIR | Converts MCU logic signals to high-current power for DC motor |
+| **Steering Actuator** | REV Smart Servo V2 / MG996R | Digital High-Torque Metal Gear | PWM (`Pin D9`) | Actuates front Ackermann steering rack |
+
+---
 
 ### 3.3 Multi-View Photographs
 
@@ -147,6 +94,8 @@
 | Left Side | Right Side |
 | :---: | :---: |
 | ![Left](photos/car_left.jpg) | ![Right](photos/car_right.jpg) |
+
+---
 
 ### 3.4 Demonstration Videos
 * **Open Challenge Demonstration Video:** [YouTube Link]
@@ -167,12 +116,38 @@
 ### 5.1 Chassis & Kinematics
 ### 5.2 Drive System & Differential
 ### 5.3 Steering System
-### 5.4 Motors & Drivetrain
+### 5.4 Motors, Drivers & Selection Rationale
+
+#### Drive Motor Driver
+<img width="400" alt="Motor Driver Module" src="https://github.com/user-attachments/assets/e974975c-841e-4834-8ada-cf40c2051d88" />
+
+* **Model:** Cytron 13A Single DC Motor Driver
+* **Operating Voltage & Current:** 5V–30V, 13A Continuous (30A Peak)
+* **Interface:** PWM Speed & DIR Digital Control from Microcontroller
+* **Primary Function:** Drives the main rear DC motor based on steering PID outputs.
+* **Selection Rationale ("Why We Chose It"):** Unlike standard L298N drivers (which drop ~2V across internal transistors and overheat), the NMOS design of the Cytron delivers near 100% battery power efficiency without overheating during rapid acceleration runs.
+
+---
+
+#### Steering Servo Motor
+<img width="400" alt="REV Servo Motor" src="https://github.com/user-attachments/assets/112df6cb-7e90-4af8-a5c2-14de61a694c0" />
+
+* **Model:** REV Smart Robot Servo V2 / MG996R
+* **Type:** Digital High-Torque Metal-Gear Servo
+* **Interface:** PWM Signal Pin (`D9` on Microcontroller)
+* **Primary Function:** Operates the front Ackermann steering rack.
+* **Selection Rationale ("Why We Chose It"):** Metal gears prevent stripping during high-speed wall impacts. High stall torque (>10 kg·cm) ensures instantaneous response times when the PID controller requests rapid corrective steering angles in tight corners.
+
+---
+
 ### 5.5 Speed & Torque Calculations
-* **Vehicle Mass:**
-* **Target Speed:**
-* **Gear Ratio:**
-* **Torque Reasoning:**
+* **Vehicle Mass ($m$):** [e.g., 1.2 kg]
+* **Target Linear Speed ($v$):** [e.g., 1.5 m/s]
+* **Wheel Diameter ($d$) & Radius ($r$):** [e.g., 65mm / 0.0325m]
+* **Gear Ratio:** [e.g., 1:10]
+* **Torque Reasoning:** Equations proving motor stall/operating torque ($T = F \cdot r$) can accelerate the vehicle without exceeding motor thermal limits.
+
+---
 
 ### 5.6 Mechanical Design Decisions
 ### 5.7 Mechanical Iterations
@@ -181,15 +156,55 @@
 ## 6. Power & Sensor Architecture
 
 ### 6.1 Power System & Isolation
+To prevent computing resets (brownouts) caused by motor current surges, power distribution is split into two isolated domains sharing a common ground:
+
 ### 6.2 Power Distribution
-### 6.3 Power Budget
+### 6.3 Power Budget Table
 | Component Domain | Powered Hardware | Power Source / Voltage | Max Current Draw |
 | :--- | :--- | :--- | :--- |
-| **Logic Domain** | Main SBC & Sensors | 5V Regulator / Power Bank | |
-| **Drive Domain** | DC Motor & Steering Servo | 2S 7.4V LiPo Battery | |
+| **Logic Domain** | Raspberry Pi 4 / Arduino Nano / Sensors | 5V Regulator / Power Bank | 2.5 A |
+| **Drive Domain** | DC Motor & Steering Servo | 2S 7.4V LiPo Battery | 5.0 A Peak |
+
+---
 
 ### 6.4 Battery & Regulation
-### 6.5 Sensors
+---
+
+### 6.5 Sensors & Component Selection Rationale
+
+#### Vision Camera
+<img width="400" alt="Raspberry Pi Camera Module 3 Wide" src="https://github.com/user-attachments/assets/5c6cab85-ed41-4f66-8147-8fbd5683255c" />
+
+* **Model:** Raspberry Pi Camera Module 3 Wide
+* **Sensor & Resolution:** Sony IMX708 (12 Megapixel), 1080p @ 50fps
+* **Interface:** CSI (Camera Serial Interface) directly to SBC
+* **Primary Function:** Captures live track frames for BGR-to-HSV color filtering, identifying red/green pillars, and locating magenta parallel parking bounds.
+* **Selection Rationale ("Why We Chose It"):** We selected the 120° wide-angle version over the standard 75° camera. The ultra-wide field of view allows the vision system to detect wall corners and red/green traffic pillars earlier when negotiating sharp 90° turns, eliminating the need for complex pan-tilt mechanisms.
+
+---
+
+#### Inertial Measurement Unit (IMU)
+<img width="400" alt="MPU6050 IMU Module" src="https://github.com/user-attachments/assets/43787b9a-8cb0-4fca-b6b4-922ac4cd07ab" />
+
+* **Model:** MPU-6050
+* **Sensor Type:** 6-Axis Motion Tracking (3-Axis Gyroscope + 3-Axis Accelerometer)
+* **Interface:** I2C (`SDA` / `SCL`)
+* **Primary Function:** Measures yaw rate and angular heading velocity to maintain straight-line stability and assist turn verification.
+* **Selection Rationale ("Why We Chose It"):** Offers high sample rates (up to 1kHz) with minimal power consumption (~3.9mA). Its built-in Digital Motion Processor (DMP) offloads sensor-fusion calculations from our primary microcontroller.
+
+---
+
+#### Distance Sensors
+<img width="400" alt="TOF200C Distance Sensor" src="https://github.com/user-attachments/assets/e5e50b81-aab1-44f8-a4a9-a0db099a9dc4" />
+
+* **Model:** TOF200C (VL53L0X Time-of-Flight Sensor)
+* **Type:** Laser Time-of-Flight (ToF) Distance Sensor
+* **Interface:** I2C
+* **Primary Function:** Measures millimeter-exact distances to track walls for collision avoidance and parallel parking alignment.
+* **Selection Rationale ("Why We Chose It"):** Ultrasonic sensors (HC-SR04) suffer from wide 15° beam reflection angles and echo interference when bouncing off smooth track walls at an angle. Time-of-Flight laser sensors use a narrow infrared beam, giving reliable distance readings regardless of wall color or angle.
+
+---
+
 ### 6.6 Sensor Placement Geometry
 ### 6.7 Sensor Calibration
 ### 6.8 Sensor Failure Modes & Mitigation
@@ -218,6 +233,7 @@
 ### 8.5 Obstacle Management Strategy
 ### 8.6 Parallel Parking Strategy
 ### 8.7 Control Algorithm
+Steering angle $\delta(t)$ is dynamically calculated using a Proportional-Integral-Derivative (PID) loop:
 $$\delta(t) = K_p e(t) + K_i \int e(t)dt + K_d \frac{de(t)}{dt}$$
 
 ### 8.8 Edge Cases & Safeguards
@@ -239,6 +255,16 @@ $$\delta(t) = K_p e(t) + K_i \int e(t)dt + K_d \frac{de(t)}{dt}$$
 ### 10.5 Calibration Procedures
 ### 10.6 Test Results
 ### 10.7 Design Iterations
+
+#### Evolution of VectorX
+| Version | Key Features & Setup | Observations / Limitations Found | Action Taken / Changes Made |
+| :--- | :--- | :--- | :--- |
+| **Prototype V1** | Off-the-shelf 2WD chassis, single Ultrasonic sensor, direct DC drive without differential. | Suffered from tire slip on corners, erratic distance readings off angled walls, and high CoG. | Shifted to Ackermann steering, 3D printed baseplate, and mechanical differential. |
+| **Prototype V2** | 3D-printed Ackermann chassis, single 5V power bank for logic + motors, 75° camera. | Motor current surges caused Raspberry Pi resets; limited camera FOV missed wall turns early. | Separated logic and drive power domains; upgraded to 120° Wide-Angle camera. |
+| **Final Build (V3)** | Custom PETG deck, dual isolated power circuits, wide-angle camera + TOF200C laser distance array. | Stable 30+ FPS vision processing, zero controller resets, precise wall centering and parallel parking. | Finalized software tuning and state machine logic. |
+
+---
+
 ### 10.8 Problems & Solutions
 ---
 
@@ -246,10 +272,12 @@ $$\delta(t) = K_p e(t) + K_i \int e(t)dt + K_d \frac{de(t)}{dt}$$
 
 ### 11.1 Hardware Requirements
 ### 11.2 Bill of Materials (BOM)
-| Component | Description / Spec | Qty | Unit Cost (₹) | Total (₹) | Source / Vendor |
+| Component | Description / Spec | Qty | Unit Cost (₹) | Total Cost (₹) | Source / Vendor |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | | | | | | |
-| **Total Cost** | | | | **₹0.00** | |
+| **Total Build Cost** | | | | **₹0.00** | |
+
+---
 
 ### 11.3 CAD & Manufacturing Files
 ### 11.4 Wiring Instructions
