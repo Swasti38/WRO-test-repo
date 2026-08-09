@@ -105,18 +105,50 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 ![Team Photo](photos/team_photo.jpg)
 
 ### Team VectorX
-**Country:** India | **Category:** WRO Future Engineers 2026  
-**Coach:** Chirag Sir
+**Country:** India | **Category:** WRO Future Engineers 2026
 
 </div>
 
 ---
 ### 2.1 Team Members & Coach
-* **Team Name -** Vector X
-* **Country -** India
-* **Members -** Pratham Periwal, Inaaya Sood, Swasti Kedia
-* **Coach -** Chirag Sir
-* **Category -** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
+
+#### Pratham Periwal
+<table>
+  <tr>
+    <td width="200" align="center">
+      <img src="photos/pratham.jpg" width="180" alt="Pratham Periwal" />
+    </td>
+    <td>
+      Hi, I'm Pratham! I love coding, problem-solving, and building intelligent systems that interact with the physical world.
+    </td>
+  </tr>
+</table>
+
+#### Inaaya Sood
+<table>
+  <tr>
+    <td width="200" align="center">
+      <img src="photos/inaaya.jpg" width="180" alt="Inaaya Sood" />
+    </td>
+    <td>
+      Hi, I'm Inaaya! I'm passionate about mechanical design, 3D modeling, and bringing physical hardware concepts to life.
+    </td>
+  </tr>
+</table>
+
+#### Swasti Kedia
+<table>
+  <tr>
+    <td width="200" align="center">
+      <img src="photos/swasti.jpg" width="180" alt="Swasti Kedia" />
+    </td>
+    <td>
+      Hi, I'm Swasti! I enjoy working with electronics, circuit design, and fine-tuning sensors to make robots move smoothly.
+    </td>
+  </tr>
+</table>
+
+* **Coach & Mentor:** **Chirag Sir** — Guided our team through system architecture, strategy, and WRO FE competition rules.
 
 ### 2.2 Member Roles & Contributions
 * **Pratham Periwal:** xyz
