@@ -109,8 +109,7 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 * **Coach -** Chirag Sir
 * **Category -** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
 
-### 2.2 Team Photo
-### 2.3 Member Roles & Contributions
+### 2.2 Member Roles & Contributions
 * **Pratham Periwal:** xyz
 * **Inaaya Sood:** xyz
 * **Swasti Kedia:** xyz
