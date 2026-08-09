@@ -109,7 +109,6 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 
 </div>
 
----
 ### 2.1 Team Members & Coach
 
 #### Pratham Periwal
