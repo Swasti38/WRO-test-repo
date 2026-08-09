@@ -149,13 +149,7 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 </table>
 
 #### Chirag Sir (Coach)
-<table>
-  <tr>
-    <td>
-      Hi, I'm Swasti! I like xyz.
-    </td>
-  </tr>
-</table>
+Helped with xyz
 
 ### 2.2 Member Roles & Contributions
 * **Pratham Periwal:** xyz
