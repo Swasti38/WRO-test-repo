@@ -122,9 +122,9 @@
 
 ### 2.2 Team Photo
 ### 2.3 Member Roles & Contributions
-* **Pratham Periwal:** [e.g., Lead Software & Computer Vision Engineer]
-* **Inaaya Sood:** [e.g., Mechanical Systems & CAD Designer]
-* **Swasti Kedia:** [e.g., Electronics & Sensor Integration Engineer]
+* **Pratham Periwal:** xyz
+* **Inaaya Sood:** xyz
+* **Swasti Kedia:** xyz
 
 ---
 
