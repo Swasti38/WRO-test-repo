@@ -69,7 +69,7 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
        +-----------------------+-------------------------+
                                |
                                | Sends Steering & Speed Commands 
-                               | (Serial / USB Cable)
+                               | (USB Cable)
                                v
        +-------------------------------------------------+
        |                  Arduino Uno                    |
@@ -91,6 +91,11 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
       | (w/ Encoder Feedback) |
       +-----------------------+
 ```
+#### How the System Loop Works:
+
+1. **Perception (Sense):** The Pi Camera 3 Wide captures live track video, while the ToF distance sensors and MPU-6050 gyro measure wall distances and car orientation.
+2. **Decision (Decide):** The Raspberry Pi 5 processes the camera feed using OpenCV to detect red/green traffic pillars and track lines. It calculates the necessary steering angle and target speed, then sends these commands to the Arduino over the USB cable.
+3. **Execution (Act):** The Arduino Uno receives the speed and steering values, adjusts the REV Smart Servo for front-wheel Ackermann steering, and controls power to the drive motor via the TB6612FNG driver.
 ---
 
 ## 2. The Team
@@ -98,11 +103,11 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 ![Team Photo](photos/team_photo.jpg)
 
 ### 2.1 Team Members & Coach
-* **Team Name:** Vector X
-* **Country:** India
-* **Members:** Pratham Periwal, Inaaya Sood, Swasti Kedia
-* **Coach:** Chirag Sir
-* **Category:** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
+* **Team Name -** Vector X
+* **Country -** India
+* **Members -** Pratham Periwal, Inaaya Sood, Swasti Kedia
+* **Coach -** Chirag Sir
+* **Category -** WRO Future Engineers 2026 (Self-Driving Cars Challenge)
 
 ### 2.2 Team Photo
 ### 2.3 Member Roles & Contributions
