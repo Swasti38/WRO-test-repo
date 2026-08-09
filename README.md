@@ -119,7 +119,7 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
       <img src="photos/pratham.jpg" width="180" alt="Pratham Periwal" />
     </td>
     <td>
-      Hi, I'm Pratham! I love coding, problem-solving, and building intelligent systems that interact with the physical world.
+      Hi, I'm Pratham! I like xyz.
     </td>
   </tr>
 </table>
@@ -131,7 +131,7 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
       <img src="photos/inaaya.jpg" width="180" alt="Inaaya Sood" />
     </td>
     <td>
-      Hi, I'm Inaaya! I'm passionate about mechanical design, 3D modeling, and bringing physical hardware concepts to life.
+      Hi, I'm Inaaya! I like xyz.
     </td>
   </tr>
 </table>
@@ -143,12 +143,12 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
       <img src="photos/swasti.jpg" width="180" alt="Swasti Kedia" />
     </td>
     <td>
-      Hi, I'm Swasti! I enjoy working with electronics, circuit design, and fine-tuning sensors to make robots move smoothly.
+      Hi, I'm Swasti! I like xyz.
     </td>
   </tr>
 </table>
 
-* **Coach & Mentor:** **Chirag Sir** — Guided our team through system architecture, strategy, and WRO FE competition rules.
+* **Coach -** **Chirag Sir** — Guided our team through system architecture, strategy, and WRO FE competition rules.
 
 ### 2.2 Member Roles & Contributions
 * **Pratham Periwal:** xyz
