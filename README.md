@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img width="1176" height="1338" alt="VectorX Logo" src="https://github.com/user-attachments/assets/27122d0f-2dee-4fd9-bd03-1f500e11c383" />
+<img width="588" height="669" alt="VectorX Logo" src="https://github.com/user-attachments/assets/27122d0f-2dee-4fd9-bd03-1f500e11c383" />
 
 
 <br />
