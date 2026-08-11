@@ -156,10 +156,9 @@ VectorX works using a simple system - **Sense ➔ Decide ➔ Act**
 ### 2.2 Team Identity & Story
 
 #### Why "VectorX"?
-In physics, a **vector** is all about two things: direction and speed. That summed up what we needed our car to do—figure out where to steer and how fast to drive at any given millisecond. 
+In physics, a **vector** is two things - direction and speed. That is basically what our car needs to do - figure out where to steer and how fast to drive at any given millisecond. 
 
-The **X** stands for the unknowns. During the competition, we won't know the pillar layouts, drive direction, or track placement ahead of time. So, **VectorX** is basically our promise to build a car that can handle whatever unpredictable track setup WRO throws at us.
-
+The **X** stands for the unknowns. During the competition, we won't know the pillar layouts, drive direction, or track placement ahead of time. So, **VectorX** is basically a car that can handle any situation, no matter how hard it is.
 #### The Logo
 <div align="center">
 
@@ -167,10 +166,7 @@ The **X** stands for the unknowns. During the competition, we won't know the pil
 
 </div>
 
-We designed the logo to match the vibe of the build:
-* **Sharp, angled lines:** Inspired by the quick reaction time and tight 90° cornering our car needs on the track.
-* **Symmetrical shape:** A nod to how we split the hardware down the middle—keeping vision processing on the Pi 5 and real-time motor control on the Arduino.
-* **The center X:** Styled to look like our front Ackermann steering linkages working together.
+We wanted a clean, modern logo for our team. The design uses a styled 'X' with sharp arrows to mirror our team name and the dynamic steering of our car.
 
 ---
 
