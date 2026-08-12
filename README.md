@@ -504,7 +504,7 @@ Yaw_rate_corrected = Yaw_rate_raw - G_off
 
 The complete wiring layout below illustrates every pin-to-pin signal and power connection.
 
-> *Figure 6.1: System Circuit Schematic and Hardware Interconnection Layout — add the exported schematic image here (e.g. `photos/wiring_schematic.png`).*
+<img width="942" height="560" alt="Screenshot 2026-08-12 at 8 41 02 PM" src="https://github.com/user-attachments/assets/dfa898cf-7621-469a-8d6d-ada56d65b1e7" />
 
 **Pre-Power Hardware Safety Checklist:**
 1. Verify common ground continuity between Battery (–), PDB GND, Buck Converter GND, Pi 5 GND, Arduino GND, and Motor Driver GND.
