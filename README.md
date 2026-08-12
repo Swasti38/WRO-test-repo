@@ -5,7 +5,6 @@
 
 <img width="588" height="669" alt="VectorX Logo" src="https://github.com/user-attachments/assets/cdfead13-dfc9-4b0e-b124-f1bc8a1a2785" />
 
-
 <br />
 
 [![YouTube](https://img.shields.io/badge/YouTube-Vector%20X-red?style=for-the-badge&logo=youtube&logoColor=white)](https://your-youtube-channel-url.com)
@@ -846,48 +845,7 @@ Chassis-level subsystem testing (fit, clearance, mechanical stability across ite
 
 > Add specifics here as you generate them — e.g. actual latency numbers from the serial test, or FPS numbers from a Pi diagnostics run.
 
-### 10.4 Full-System Testing
-
-Full-course runs were used as the final validation step, on the reasoning that testing only individual sections could miss problems that only appear during a complete run. This is where the actual run data belongs — see the template in **Section 10.6** below.
-
-> Fill in: how many full-course runs, on what track configuration(s), and under what conditions (battery level, lighting, obstacle layout if applicable).
-
-### 10.5 Calibration Procedures
-
-Full calibration steps for each subsystem are already documented in **Section 11.10** (steering servo center, ToF sensors, camera color thresholds, encoder distance, motor deadzone) — refer there rather than duplicating. Use this section for anything **competition-specific** that isn't part of the standard one-time calibration, for example:
-
-> Fill in: which calibrations were repeated on-site at competition (e.g. HSV thresholds re-tuned for venue lighting), and how long that took.
-
-### 10.6 Test Results
-
-*(Structure only — fill in with real data.)*
-
-| Run # | Date | Direction (CW/CCW) | Result | Notes |
-|:---|:---|:---|:---|:---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-
-**Summary metrics to report once you have enough runs:**
-- Success rate (clean laps / total attempts)
-- Average lap time (and best/worst)
-- Turn-counting accuracy (correct turn detections / actual turns)
-- Common failure point(s), if any pattern emerges
-
-### 10.7 Design Iterations
-
-**Mechanical iterations** are already documented in **Section 5.7** (chassis v1 → v3) — no need to duplicate here, just cross-reference.
-
-**Software/control iterations** — *(structure only, fill in as you tune):*
-
-| Iteration | Change | Reason |
-|:---|:---|:---|
-| | e.g. `Kp` adjusted from _ to _ | |
-| | e.g. `TARGET_INNER_DIST` adjusted | |
-| | e.g. `SINGLE_TURN_YAW` / `MIN_TURN_INTERVAL_MS` tuned | |
-| | e.g. HSV thresholds re-tuned | |
-
-### 10.8 Problems & Solutions
+### 10.4 Problems & Solutions
 
 *(Structure only — fill in with real entries as issues come up. This should capture what actually broke, distinct from Section 9.3's anticipated risks.)*
 
